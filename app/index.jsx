@@ -7,7 +7,8 @@ const Home = () => {
   return (
     <View>
       <Text>HOME</Text>
-      <Link href='/HomeScreen'>customer Page</Link>
+      <Link href='/HomeScreen'>explore tailors Page</Link>
+      <Link href='/TailorProfile'>tailor profile</Link>
     </View>
   )
 }

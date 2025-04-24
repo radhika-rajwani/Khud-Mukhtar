@@ -10,6 +10,7 @@ const Home = () => {
       <Link href='/HomeScreen'>explore tailors Page</Link>
       <Link href='/UserTypeSelectionScreen'>view services offered</Link>
       <Link href='/TailorProfile'>tailor profile</Link>
+      <Link href="/AuthScreen">Login / Register</Link>
     </View>
   )
 }

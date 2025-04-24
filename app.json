@@ -5,7 +5,7 @@
     "slug": "khud-mukhtar",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {

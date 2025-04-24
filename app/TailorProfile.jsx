@@ -1,6 +1,6 @@
 import { Dimensions } from 'react-native';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import { Star, CheckCircle, UserCircle, MessageCircle, ChevronLeft } from 'lucide-react-native';
+import { Star, CheckCircle, UserCircle, MessageCircle } from 'lucide-react-native';
 
 
 const screenWidth = Dimensions.get('window').width;

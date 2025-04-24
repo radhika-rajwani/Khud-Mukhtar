@@ -11,6 +11,7 @@ const Home = () => {
       <Link href="/UserTypeSelectionScreen">View Services Offered</Link>
       <Link href="/TailorProfile">Tailor Profile</Link>
       <Link href="/AuthScreen">Login / Register</Link>
+      <Link href="/CreateProfileScreen">Create Profile</Link>
       <Link href="/Chats">Chats</Link>
       <Link href="/Notifications">Notifications</Link>
       <Link href="/Orders">Orders</Link>

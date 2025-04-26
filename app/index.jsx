@@ -14,10 +14,10 @@ const Home = () => {
       <Link href="/AuthScreen">Login / Register</Link>
       <Link href="/CreateProfileScreen">Create Profile</Link>
       <Link href="/TailorView/Chats">Chats</Link>
-      <Link href="/Customer_Notifications">Customer Notifications</Link>
-      <Link href="/Tailor_Notifications">Tailor Notifications</Link>
+      <Link href="/CustomerView/Customer_Notifications">Customer Notifications</Link>
+      <Link href="/TailorView/Tailor_Notifications">Tailor Notifications</Link>
       <Link href="/Orders">Orders</Link>
-      <Link href="/SidebarScreen">Side Bar</Link>
+      <Link href="/CustomerView/SidebarScreen">Side Bar</Link>
       {/* <Link href="/Profile">Profile</Link> */}
       {/* <Link href="/Settings">Settings</Link> */}
     </View>

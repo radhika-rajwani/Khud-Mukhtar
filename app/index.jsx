@@ -18,6 +18,9 @@ const Home = () => {
       <Link href="/TailorView/Tailor_Notifications">Tailor Notifications</Link>
       <Link href="/Orders">Orders</Link>
       <Link href="/CustomerView/SidebarScreen">Side Bar</Link>
+      <Link href="/ProfileEditScreen">Profile Edit Screen</Link>
+      <Link href="/ShowcaseScreen">Showcase Screen</Link>
+      
       {/* <Link href="/Profile">Profile</Link> */}
       {/* <Link href="/Settings">Settings</Link> */}
     </View>

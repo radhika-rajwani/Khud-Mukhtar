@@ -6,20 +6,23 @@ import VerifyPhoneScreen from './VerifyPhoneScreen';
 const Home = () => {
   return (
     <View>
-      <Text>HOME</Text>
+      
+      <Link href="/UserTypeSelectionScreen">Home</Link>
 
-      <Link href="/HomeScreen">Explore Tailors Page</Link>
+      <Link href="/CustomerView/HomeScreen">Explore Tailors Page</Link>
       <Link href="/UserTypeSelectionScreen">View Services Offered</Link>
-      <Link href="/TailorProfile">Tailor Profile</Link>
+      <Link href="/CustomerView/TailorProfile">Tailor Profile</Link>
       <Link href="/AuthScreen">Login / Register</Link>
       <Link href="/CreateProfileScreen">Create Profile</Link>
-      <Link href="/Chats">Chats</Link>
-      <Link href="/Notifications">Notifications</Link>
+      <Link href="/TailorView/Chats">Chats</Link>
+      <Link href="/CustomerView/Customer_Notifications">Customer Notifications</Link>
+      <Link href="/CustomerView/CustomerPovChat">Customer Chat WIth Tailor</Link>
+      <Link href="/TailorView/Tailor_Notifications">Tailor Notifications</Link>
       <Link href="/Orders">Orders</Link>
       <Link href="/SidebarScreen">Side Bar</Link>
-      <Link href="/VerifyPhoneScreen">Verify Phone Number</Link>
       {/* <Link href="/Profile">Profile</Link> */}
       {/* <Link href="/Settings">Settings</Link> */}
+      <Link href="/VerifyPhoneScreen">Verify Phone Number</Link>
     </View>
   );
 };

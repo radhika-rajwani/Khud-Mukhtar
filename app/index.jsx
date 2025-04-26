@@ -15,6 +15,7 @@ const Home = () => {
       <Link href="/CreateProfileScreen">Create Profile</Link>
       <Link href="/TailorView/Chats">Chats</Link>
       <Link href="/CustomerView/Customer_Notifications">Customer Notifications</Link>
+      <Link href="/CustomerView/CustomerPovChat">Customer Chat WIth Tailor</Link>
       <Link href="/TailorView/Tailor_Notifications">Tailor Notifications</Link>
       <Link href="/Orders">Orders</Link>
       <Link href="/CustomerView/SidebarScreen">Side Bar</Link>

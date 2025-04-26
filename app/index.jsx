@@ -1,7 +1,6 @@
 import {Text, View } from 'react-native'
 import React from 'react';
 import { Link } from 'expo-router';
-import VerifyPhoneScreen from './VerifyPhoneScreen';
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
 
       <Link href="/CustomerView/HomeScreen">Explore Tailors Page</Link>
       <Link href="/UserTypeSelectionScreen">View Services Offered</Link>
-      <Link href="/CustomerView/TailorProfile">Tailor Profile</Link>
+      <Link href="/CustomerView/TailorProfile">User Can see Tailor Profile</Link>
       <Link href="/AuthScreen">Login / Register</Link>
       <Link href="/CreateProfileScreen">Create Profile</Link>
       <Link href="/TailorView/Chats">Chats</Link>
@@ -19,10 +18,12 @@ const Home = () => {
       <Link href="/CustomerView/CustomerPovChat">Customer Chat WIth Tailor</Link>
       <Link href="/TailorView/Tailor_Notifications">Tailor Notifications</Link>
       <Link href="/Orders">Orders</Link>
-      <Link href="/SidebarScreen">Side Bar</Link>
+      <Link href="/CustomerView/SidebarScreen"> customer Side Bar</Link>
       {/* <Link href="/Profile">Profile</Link> */}
       {/* <Link href="/Settings">Settings</Link> */}
       <Link href="/VerifyPhoneScreen">Verify Phone Number</Link>
+      <Link href="/TailorView/TailorSideBar">Tailor Side Bar </Link>
+      <Link href="/TailorView/MyProfile">Tailors My Profile</Link>
     </View>
   );
 };

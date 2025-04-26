@@ -1,6 +1,7 @@
 import {Text, View } from 'react-native'
 import React from 'react';
 import { Link } from 'expo-router';
+import VerifyPhoneScreen from './VerifyPhoneScreen';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Link href="/Notifications">Notifications</Link>
       <Link href="/Orders">Orders</Link>
       <Link href="/SidebarScreen">Side Bar</Link>
+      <Link href="/VerifyPhoneScreen">Verify Phone Number</Link>
       {/* <Link href="/Profile">Profile</Link> */}
       {/* <Link href="/Settings">Settings</Link> */}
     </View>

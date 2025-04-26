@@ -4,17 +4,18 @@ import { Star, CheckCircle, UserCircle, MessageCircle } from 'lucide-react-nativ
 import { Link } from 'expo-router';
 
 const screenWidth = Dimensions.get('window').width;
+
 const TailorProfile = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
-      <TouchableOpacity style={styles.backButton}>
-        <Link href="/CustomerView/HomeScreen">
-          <Text style={styles.backButtonText}>Back</Text>
-        </Link>
-      </TouchableOpacity>
-
+        <TouchableOpacity style={styles.backButton}>
+          <Link href="/CustomerView/HomeScreen">
+            <Text style={styles.backButtonText}>Back</Text>
+          </Link>
+        </TouchableOpacity>
       </View>
+      <Text style={styles.timeAwayText}>11 mins away from you</Text>
 
       <View style={styles.profileSection}>
         <View style={styles.profileImagePlaceholder}>
@@ -23,11 +24,11 @@ const TailorProfile = () => {
         <CheckCircle size={24} color="#2196F3" style={styles.verifiedIcon} />
         <Text style={styles.tailorName}>Shabana</Text>
         <View style={styles.ratingAndOrders}>
-            <View style={styles.rating}>
-              <Star size={16} color="#FFC107" style={styles.starIcon} />
-              <Text style={styles.ratingText}>4.8</Text>
-            </View>
-            <Text style={styles.orderText}>10 orders completed</Text>
+          <View style={styles.rating}>
+            <Star size={16} color="#FFC107" style={styles.starIcon} />
+            <Text style={styles.ratingText}>4.8</Text>
+          </View>
+          <Text style={styles.orderText}>10 orders completed</Text>
         </View>
 
         <Text style={styles.description}>
@@ -51,63 +52,63 @@ const TailorProfile = () => {
       </View>
 
       <View style={styles.reviewsSection}>
-          <Text style={styles.reviewsTitle}>Reviews</Text>
-          {/* Placeholder Review Items */}
-          <View style={styles.reviewItem}>
-            <View style={styles.reviewProfilePlaceholder}>
-                <UserCircle size={30} color="#DDD" />
-            </View>
-            <View style={styles.reviewContent}>
-                <Text style={styles.reviewerName}>Malika</Text>
-                <View style={styles.reviewRating}>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                </View>
-                <Text style={styles.reviewText}>nice design</Text>
-            </View>
+        <Text style={styles.reviewsTitle}>Reviews</Text>
+        {/* Placeholder Review Items */}
+        <View style={styles.reviewItem}>
+          <View style={styles.reviewProfilePlaceholder}>
+            <UserCircle size={30} color="#DDD" />
           </View>
+          <View style={styles.reviewContent}>
+            <Text style={styles.reviewerName}>Malika</Text>
+            <View style={styles.reviewRating}>
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+            </View>
+            <Text style={styles.reviewText}>nice design</Text>
+          </View>
+        </View>
 
-           <View style={styles.reviewItem}>
-            <View style={styles.reviewProfilePlaceholder}>
-                <UserCircle size={30} color="#DDD" />
-            </View>
-            <View style={styles.reviewContent}>
-                <Text style={styles.reviewerName}>Bushra</Text>
-                 <View style={styles.reviewRating}>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                </View>
-                <Text style={styles.reviewText}>Good fit</Text>
-            </View>
+        <View style={styles.reviewItem}>
+          <View style={styles.reviewProfilePlaceholder}>
+            <UserCircle size={30} color="#DDD" />
           </View>
+          <View style={styles.reviewContent}>
+            <Text style={styles.reviewerName}>Bushra</Text>
+            <View style={styles.reviewRating}>
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+            </View>
+            <Text style={styles.reviewText}>Good fit</Text>
+          </View>
+        </View>
 
-          <View style={styles.reviewItem}>
-            <View style={styles.reviewProfilePlaceholder}>
-                 <UserCircle size={30} color="#DDD" />
-            </View>
-            <View style={styles.reviewContent}>
-                <Text style={styles.reviewerName}>Mehroz</Text>
-                 <View style={styles.reviewRating}>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                    <Star size={12} color="#FFC107"/>
-                </View>
-                <Text style={styles.reviewText}>
-                  Excellent service and very good work. Highly recommended.
-                </Text>
-            </View>
+        <View style={styles.reviewItem}>
+          <View style={styles.reviewProfilePlaceholder}>
+            <UserCircle size={30} color="#DDD" />
           </View>
+          <View style={styles.reviewContent}>
+            <Text style={styles.reviewerName}>Mehroz</Text>
+            <View style={styles.reviewRating}>
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+              <Star size={12} color="#FFC107" />
+            </View>
+            <Text style={styles.reviewText}>
+              Excellent service and very good work. Highly recommended.
+            </Text>
+          </View>
+        </View>
       </View>
+      
       <TouchableOpacity style={styles.chatButton}>
         <MessageCircle size={20} color="#FFF" />
         <Text style={styles.chatButtonText}>Chat</Text>
-    </TouchableOpacity>
-
+      </TouchableOpacity>
     </ScrollView>
   );
 };
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingTop: 40, // Adjust as needed for status bar
-    marginBottom: 20,
+    marginBottom: 10,
   },
   backButton: {
     marginRight: 10,
@@ -132,11 +133,6 @@ const styles = StyleSheet.create({
   backButtonText: {
     color: '#007AFF', // iOS blue
     fontSize: 18
-  },
-  headerTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
   },
   profileSection: {
     alignItems: 'center',
@@ -190,7 +186,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDD',
     marginBottom: 10,
     borderRadius: 8,
-  },  
+  },
   reviewsSection: {
     paddingHorizontal: 16,
     marginBottom: 80, // Leave space for the chat button
@@ -250,25 +246,32 @@ const styles = StyleSheet.create({
   ratingAndOrders: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 8
+    marginTop: 8,
+    flexWrap: 'wrap', // Allows the items to wrap if needed
   },
   rating: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginRight: 16
+    marginRight: 16,
   },
   ratingText: {
     fontSize: 14,
     color: '#333',
-    marginLeft: 2
+    marginLeft: 2,
   },
   orderText: {
     fontSize: 14,
-    color: '#555'
+    color: '#555',
   },
   starIcon: {
-    marginRight: 2
-  }
+    marginRight: 2,
+  },
+  timeAwayText: {
+    fontSize: 14,
+    color: '#555',
+    marginLeft:15,
+    marginBottom:10,
+  },
 });
 
 export default TailorProfile;

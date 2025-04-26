@@ -5,14 +5,15 @@ import { Link } from 'expo-router';
 const Home = () => {
   return (
     <View>
-      <Text>HOME</Text>
+      
+      <Link href="/UserTypeSelectionScreen">Home</Link>
 
-      <Link href="/HomeScreen">Explore Tailors Page</Link>
+      <Link href="/CustomerView/HomeScreen">Explore Tailors Page</Link>
       <Link href="/UserTypeSelectionScreen">View Services Offered</Link>
-      <Link href="/TailorProfile">Tailor Profile</Link>
+      <Link href="/CustomerView/TailorProfile">Tailor Profile</Link>
       <Link href="/AuthScreen">Login / Register</Link>
       <Link href="/CreateProfileScreen">Create Profile</Link>
-      <Link href="/Chats">Chats</Link>
+      <Link href="/TailorView/Chats">Chats</Link>
       <Link href="/Customer_Notifications">Customer Notifications</Link>
       <Link href="/Tailor_Notifications">Tailor Notifications</Link>
       <Link href="/Orders">Orders</Link>

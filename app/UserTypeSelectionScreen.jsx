@@ -1,24 +1,31 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-const UserTypeSelectionScreen = ({ onSelectUserType }) => {
+const UserTypeSelectionScreen = () => {
+  const navigation = useNavigation();
+
+  const handleUserTypeSelect = (userType) => {
+    navigation.navigate('AuthScreen', { userType });
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
       <View style={styles.content}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => onSelectUserType('tailor')}
+          onPress={() => handleUserTypeSelect('tailor')}
           activeOpacity={0.8}
         >
           <Text style={styles.buttonText}>Tailor</Text>
         </TouchableOpacity>
-        
+
         <Text style={styles.orText}>or</Text>
-        
+
         <TouchableOpacity
           style={styles.button}
-          onPress={() => onSelectUserType('user')}
+          onPress={() => handleUserTypeSelect('user')}
           activeOpacity={0.8}
         >
           <Text style={styles.buttonText}>User</Text>

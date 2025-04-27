@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text } from 'react-native';
+import { useLocalSearchParams } from 'expo-router';
 import TabSwitcher from './components/auth/TabSwitcher';
 import LoginForm from './components/auth/LoginForm';
 import RegisterForm from './components/auth/RegisterForm';
@@ -7,6 +8,13 @@ import styles from './components/auth/styles';
 
 const AuthScreen = () => {
   const [isLogin, setIsLogin] = useState(true);
+  const { register } = useLocalSearchParams();
+
+  useEffect(() => {
+    if (register === 'true') {
+      setIsLogin(false);
+    }
+  }, [register]);
 
   return (
     <View style={styles.container}>

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { TextInput, TouchableOpacity, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
 import styles from './styles';
 import PasswordInput from './PasswordInput';
 
 const LoginForm = () => {
   const [mobile, setMobile] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   return (
     <>
@@ -23,13 +25,17 @@ const LoginForm = () => {
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.loginButton}>
-        <Text style={styles.loginButtonText}>log in</Text>
+        <Text style={styles.loginButtonText}>Login</Text>
       </TouchableOpacity>
 
-      <Text style={styles.bottomText}>
-        Don't have an account?{' '}
-        <Text style={styles.registerLink}>Register</Text>
-      </Text>
+      <View style={styles.bottomTextContainer}>
+        <Text style={styles.bottomText}>
+          Don't have an account?{' '}
+        </Text>
+        <TouchableOpacity onPress={() => router.push('/AuthScreen?register=true')}>
+          <Text style={styles.registerLink}>Register</Text>
+        </TouchableOpacity>
+      </View>
     </>
   );
 };

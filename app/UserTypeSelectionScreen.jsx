@@ -28,7 +28,7 @@ const UserTypeSelectionScreen = () => {
           onPress={() => handleUserTypeSelect('user')}
           activeOpacity={0.8}
         >
-          <Text style={styles.buttonText}>User</Text>
+          <Text style={styles.buttonText}>Customer</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

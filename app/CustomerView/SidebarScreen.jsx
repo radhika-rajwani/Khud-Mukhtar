@@ -67,7 +67,7 @@ const SidebarScreen = () => {
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="/Orders" asChild>
+            <Link href="/CustomerView/Customer_Orders" asChild>
               <TouchableOpacity style={styles.menuRow}>
                 <Bookmark size={20} color="#000" />
                 <Text style={styles.menuText}>Orders</Text>

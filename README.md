@@ -49,14 +49,14 @@ A **simple, AI-powered, bilingual** platform to help women tailors:
 ##  &nbsp;Our Tech Stack
 
 <div align="center">
-  <img src="https://i.imgur.com/enOjW5j.png" height="60"/>
+  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" height="60"/>
   <img src="https://i.imgur.com/UoCnNxt.png" height="60"/>
   <img src="https://i.imgur.com/3tKryg2.png" height="60"/>
   <img src="https://i.imgur.com/dE6P2Ki.png" height="60"/>
 </div>
 
 <div align="center">
-  <h4>Expo | React Native | Gemini JS | Firebase | Payment Gateway</h4>
+  <h4>React Native + Expo | Gemini API | Firebase | Google Maps API | Google Cloud Platform</h4>
 </div>
 
 ---

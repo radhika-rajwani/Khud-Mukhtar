@@ -94,6 +94,11 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: '#444',
   },
+  bottomContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   registerLink: {
     fontWeight: 'bold',
     color: '#000',

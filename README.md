@@ -1,12 +1,11 @@
 <br>
 <div align="center">
-    <img width="300px" src="https://i.imgur.com/uG25hag.png" alt="Khudmukhtaar Logo"/>
-    <h1><b>Khud Mukhtaar</b></h1>
+    <img width="300px" src="https://i.postimg.cc/qR30md19/khud-mukhtar-logo.png" alt="Khudmukhtaar Logo"/>
+    <h1><b>Khud Mukhtar</b></h1>
     <h3><i>Your Skill, Your Future</i></h3>
     <p><i>Empowering women. Shaping tomorrow.</i></p>
 </div>
 <br>
-
 
 ## Overview
 **Khud Mukhtar** is an AI-powered digital platform designed to support home-based women tailors in Pakistan.  

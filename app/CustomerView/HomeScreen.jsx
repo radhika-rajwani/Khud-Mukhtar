@@ -1,29 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { Star, CheckCircle, ChevronRight, Menu, UserCircle, MapPin } from 'lucide-react-native';
+import { Link } from 'expo-router';
 
-
-const TailorCard = ({ name, description, rating, isVerified }) => (
+const TailorCard = ({ name, description, rating, isVerified, link }) => (
   <View style={styles.tailorCard}>
     <View style={styles.profileImagePlaceholder}>
-        <UserCircle size={60} color="#DDD"/>
+      <UserCircle size={60} color="#DDD" />
     </View>
     <View style={styles.tailorInfo}>
-      <Text style={styles.tailorName}>{name}</Text>
+      <Link href={link}>
+        <Text style={styles.tailorName}>{name}</Text>
+      </Link>
       <Text style={styles.tailorDescription}>{description}</Text>
       <View style={styles.ratingRow}>
         <Text style={styles.rating}>{rating}</Text>
-        <Star
-          size={16}
-          color="#FFC107"
-          style={styles.starIcon}
-        />
+        <Star size={16} color="#FFC107" style={styles.starIcon} />
         {isVerified && (
-          <CheckCircle
-            size={16}
-            color="#2196F3"
-            style={styles.verifiedIcon}
-          />
+          <CheckCircle size={16} color="#2196F3" style={styles.verifiedIcon} />
         )}
       </View>
     </View>
@@ -51,18 +45,17 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.time}>{currentTime}</Text>
+        <Link href="/CustomerView/SidebarScreen">
+          <Menu size={24} color="#333" />
+        </Link>
+
         <View style={styles.locationRow}>
-          <MapPin size={16} color="#777" style={styles.locationIcon}/>
+          <MapPin size={16} color="#777" style={styles.locationIcon} />
           <Text style={styles.locationText}>Clifton, Karachi</Text>
         </View>
-        <View style={styles.headerIcons}>
-          <TouchableOpacity>
-            <Menu size={24} color="#333" />
-          </TouchableOpacity>
-          <View style={styles.profilePlaceholder}>
-            <UserCircle size={35} color="#DDD" />
-          </View>
+
+        <View style={styles.profilePlaceholder}>
+          <UserCircle size={35} color="#DDD" />
         </View>
       </View>
 
@@ -73,27 +66,39 @@ const HomeScreen = () => {
 
       <Text style={styles.sectionTitle}>Tailors near you</Text>
 
+      {/* Tailor List */}
       <ScrollView style={styles.tailorList}>
         <TailorCard
           name="Shabana"
-          description="Corvallis pulvinar egestas"
+          description="Clifton, Karachi"
           rating="4.7"
           isVerified={true}
+          link="CustomerView/TailorProfile"
         />
         <TailorCard
           name="Farzana"
-          description="Corvallis pulvinar egestas"
+          description="Defence Phase 2, Karachi"
           rating="4.8"
           isVerified={false}
+          link="CustomerView/TailorProfile"
         />
         <TailorCard
           name="Ruksana"
-          description="Corvallis pulvinar egestas"
+          description="Defence Phase 3, Karachi"
           rating="4.9"
           isVerified={false}
+          link="CustomerView/TailorProfile"
+        />
+        <TailorCard
+          name="Ruksana"
+          description="Defence Phase 3, Karachi"
+          rating="4.9"
+          isVerified={false}
+          link="CustomerView/TailorProfile"
         />
       </ScrollView>
 
+      {/* See More Button */}
       <TouchableOpacity style={styles.seeMoreButton}>
         <Text style={styles.seeMoreText}>See More</Text>
         <ChevronRight size={20} color="#007AFF" />
@@ -115,11 +120,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20,
   },
-  time: {
-    fontSize: 16,
-    color: '#333',
-    fontFamily: 'System',
-  },
   locationRow: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -134,10 +134,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#333',
     fontFamily: 'System',
-  },
-  headerIcons: {
-    flexDirection: 'row',
-    alignItems: 'center',
   },
   profilePlaceholder: {
     width: 35,
@@ -231,7 +227,6 @@ const styles = StyleSheet.create({
   seeMoreButton: {
     backgroundColor: 'transparent',
     paddingVertical: 10,
-    alignItems: 'center',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center'

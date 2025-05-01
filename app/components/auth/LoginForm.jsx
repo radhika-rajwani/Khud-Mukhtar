@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextInput, TouchableOpacity, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
 import styles from './styles';
 import PasswordInput from './PasswordInput';
 import { Link } from 'expo-router';
@@ -7,6 +8,7 @@ import { Link } from 'expo-router';
 const LoginForm = () => {
   const [mobile, setMobile] = useState('');
   const [password, setPassword] = useState('');
+
   return (
     <>
       <TextInput
@@ -23,17 +25,13 @@ const LoginForm = () => {
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.loginButton}>
-        <Text style={styles.loginButtonText}>log in</Text>
+        <Text style={styles.loginButtonText}>Login</Text>
       </TouchableOpacity>
 
-      <View style={styles.bottomContainer}>
-        <Text style={styles.bottomText}>
-          Don't have an account?{' '}
-          <Link href="/AuthScreen?isLogin=false" asChild>
-            <Text style={styles.registerLink}>Register</Text>
-          </Link>
-        </Text>
-      </View>
+      <Text style={styles.bottomText}>
+        Don't have an account?{' '}
+        <Text style={styles.registerLink}>Register</Text>
+      </Text>
     </>
   );
 };

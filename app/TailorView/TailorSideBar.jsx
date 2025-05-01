@@ -5,14 +5,14 @@ import { Link, useRouter } from 'expo-router';
 
 const screenWidth = Dimensions.get('window').width;
 
-const SidebarScreen = () => {
+const TailorSidebarScreen = () => {
   const [isOpen, setIsOpen] = useState(true); 
   const router = useRouter(); 
 
   const handleMenuPress = () => {
     if (isOpen) {
       setIsOpen(false);
-      router.push('/CustomerView/HomeScreen'); 
+      router.push('/TailorView/MyProfile'); 
       setIsOpen(true); 
     }
   };
@@ -36,11 +36,11 @@ const SidebarScreen = () => {
             <View style={styles.profileCircle}>
               <Text style={styles.plus}>+</Text>
             </View>
-            <Text style={styles.username}>Radhika Rajwani</Text>
+            <Text style={styles.username}>Shabana</Text>
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="CustomerView/HomeScreen" asChild>
+            <Link href="/TailorView/MyProfile" asChild>
               <TouchableOpacity style={styles.menuRow}>
                 <Home size={20} color="#000" />
                 <Text style={styles.menuText}>Home</Text>
@@ -49,7 +49,7 @@ const SidebarScreen = () => {
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="" asChild>
+            <Link href="TailorView/Chats" asChild>
               <TouchableOpacity style={styles.menuRow}>
                 <MessageCircle size={20} color="#000" />
                 <Text style={styles.menuText}>Chats</Text>
@@ -58,7 +58,7 @@ const SidebarScreen = () => {
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="CustomerView/Customer_Notifications" asChild>
+            <Link href="TailorView/Tailor_Notifications" asChild>
               <TouchableOpacity style={styles.menuRow}>
                 <Bell size={20} color="#000" />
                 <Text style={styles.menuText}>Notifications</Text>
@@ -67,7 +67,7 @@ const SidebarScreen = () => {
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="/CustomerView/Customer_Orders" asChild>
+            <Link href="/TailorView/Tailor_Orders" asChild>
               <TouchableOpacity style={styles.menuRow}>
                 <Bookmark size={20} color="#000" />
                 <Text style={styles.menuText}>Orders</Text>
@@ -148,4 +148,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default SidebarScreen;
+export default TailorSidebarScreen;

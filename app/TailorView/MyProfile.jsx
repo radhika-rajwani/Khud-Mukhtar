@@ -1,22 +1,12 @@
 import { Dimensions } from 'react-native';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import { Star, CheckCircle, UserCircle, MessageCircle } from 'lucide-react-native';
-import { Link } from 'expo-router';
+import { Star, CheckCircle, UserCircle, MessageCircle, Edit, Plus } from 'lucide-react-native';  // Importing Edit and Plus icons
 
 const screenWidth = Dimensions.get('window').width;
 
-const TailorProfile = () => {
+const MyProfile = () => {
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton}>
-          <Link href="/CustomerView/HomeScreen">
-            <Text style={styles.backButtonText}>Back</Text>
-          </Link>
-        </TouchableOpacity>
-      </View>
-      <Text style={styles.timeAwayText}>11 mins away from you</Text>
-
+    <ScrollView style={styles.container}>    
       <View style={styles.profileSection}>
         <View style={styles.profileImagePlaceholder}>
           <UserCircle size={100} color="#DDD" />
@@ -36,6 +26,11 @@ const TailorProfile = () => {
           Suspendisse tincidunt, risus a porta egestas, purus arcu vestibulum lorem,
           sed condimentum ipsum quam ac massa.
         </Text>
+
+        {/* Edit Button */}
+        <TouchableOpacity style={styles.editButton}>
+          <Edit size={24} color="#007AFF" />
+        </TouchableOpacity>
       </View>
 
       <View style={styles.gallerySection}>
@@ -47,7 +42,13 @@ const TailorProfile = () => {
           <View style={styles.imagePlaceholder} />
           <View style={styles.imagePlaceholder} />
           <View style={styles.imagePlaceholder} />
-          <View style={styles.imagePlaceholder} />
+          
+          {/* Last Box with Plus Sign for Adding Image */}
+          <View style={styles.imagePlaceholder}>
+            <TouchableOpacity style={styles.addImageBox}>
+              <Plus size={24} color="#007AFF" />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
 
@@ -104,11 +105,11 @@ const TailorProfile = () => {
           </View>
         </View>
       </View>
-      
       <TouchableOpacity style={styles.chatButton}>
         <MessageCircle size={20} color="#FFF" />
         <Text style={styles.chatButtonText}>Chat</Text>
       </TouchableOpacity>
+
     </ScrollView>
   );
 };
@@ -118,26 +119,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F7F7F7',
   },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingTop: 40, // Adjust as needed for status bar
-    marginBottom: 10,
-  },
-  backButton: {
-    marginRight: 10,
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  backButtonText: {
-    color: '#007AFF', // iOS blue
-    fontSize: 18
-  },
   profileSection: {
     alignItems: 'center',
     paddingHorizontal: 16,
     marginBottom: 20,
+    marginTop: 20,
   },
   profileImagePlaceholder: {
     width: 100,
@@ -146,7 +132,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDD',
     marginBottom: 10,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   verifiedIcon: {
     marginTop: 10,
@@ -186,6 +172,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDD',
     marginBottom: 10,
     borderRadius: 8,
+  },
+  addImageBox: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#EEE',
+    height: 100,
+    borderRadius: 8,
+  },
+  editButton: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
   },
   reviewsSection: {
     paddingHorizontal: 16,
@@ -241,13 +239,12 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 18,
     fontWeight: 'bold',
-    marginLeft: 8
+    marginLeft: 8,
   },
   ratingAndOrders: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 8,
-    flexWrap: 'wrap', // Allows the items to wrap if needed
   },
   rating: {
     flexDirection: 'row',
@@ -266,12 +263,6 @@ const styles = StyleSheet.create({
   starIcon: {
     marginRight: 2,
   },
-  timeAwayText: {
-    fontSize: 14,
-    color: '#555',
-    marginLeft:15,
-    marginBottom:10,
-  },
 });
 
-export default TailorProfile;
+export default MyProfile;

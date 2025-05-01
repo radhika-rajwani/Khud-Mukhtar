@@ -90,6 +90,12 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
   },
+  bottomTextContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 20,
+  },
   bottomText: {
     textAlign: 'center',
     color: '#444',

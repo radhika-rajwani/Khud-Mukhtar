@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 import styles from './styles';
 import PasswordInput from './PasswordInput';
+import { useRouter } from 'expo-router';
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -12,9 +13,14 @@ const RegisterForm = () => {
     city: '',
     address: '',
   });
+  const router = useRouter();
 
   const handleChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleLogin = () => {
+    router.replace('/AuthScreen?isLogin=true');
   };
 
   return (
@@ -67,10 +73,14 @@ const RegisterForm = () => {
         <Text style={styles.loginButtonText}>Sign up</Text>
       </TouchableOpacity>
 
-      <Text style={styles.bottomText}>
-        Already have an account?{' '}
-        <Text style={styles.registerLink}>Log in</Text>
-      </Text>
+      <View style={styles.bottomTextContainer}>
+        <Text style={styles.bottomText}>
+          Already have an account?{' '}
+          <TouchableOpacity onPress={handleLogin}>
+            <Text style={styles.registerLink}>Log in</Text>
+          </TouchableOpacity>
+        </Text>
+      </View>
     </>
   );
 };

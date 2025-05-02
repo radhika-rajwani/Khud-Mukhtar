@@ -2,8 +2,7 @@
 <div align="center">
     <img width="150px" src="https://i.postimg.cc/9MRTJr5C/khud-mukhtar-logo.png" alt="Khudmukhtaar Logo"/>
     <h1><b>Khud Mukhtar</b></h1>
-    <h3><i>Your Skill, Your Future</i></h3>
-    <p><i>Empowering women. Shaping tomorrow.</i></p>
+    <h3><i>A Needle, A Thread, A Path to Independence</i></h3>
 </div>
 <br>
 

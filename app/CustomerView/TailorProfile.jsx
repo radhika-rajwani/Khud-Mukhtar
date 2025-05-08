@@ -1,6 +1,6 @@
-import { Dimensions } from 'react-native';
-import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import { Star, CheckCircle, UserCircle, MessageCircle } from 'lucide-react-native';
+import React from 'react';
+import { Dimensions, StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
+import { Ionicons, FontAwesome5 } from '@expo/vector-icons';  // Update icon imports
 import { Link } from 'expo-router';
 
 const screenWidth = Dimensions.get('window').width;
@@ -19,13 +19,13 @@ const TailorProfile = () => {
 
       <View style={styles.profileSection}>
         <View style={styles.profileImagePlaceholder}>
-          <UserCircle size={100} color="#DDD" />
+          <Ionicons name="person-circle" size={100} color="#DDD" />
         </View>
-        <CheckCircle size={24} color="#2196F3" style={styles.verifiedIcon} />
+        <Ionicons name="checkmark-circle" size={24} color="#2196F3" style={styles.verifiedIcon} />
         <Text style={styles.tailorName}>Shabana</Text>
         <View style={styles.ratingAndOrders}>
           <View style={styles.rating}>
-            <Star size={16} color="#FFC107" style={styles.starIcon} />
+            <FontAwesome5 name="star" size={16} color="#FFC107" style={styles.starIcon} />
             <Text style={styles.ratingText}>4.8</Text>
           </View>
           <Text style={styles.orderText}>10 orders completed</Text>
@@ -56,14 +56,14 @@ const TailorProfile = () => {
         {/* Placeholder Review Items */}
         <View style={styles.reviewItem}>
           <View style={styles.reviewProfilePlaceholder}>
-            <UserCircle size={30} color="#DDD" />
+            <Ionicons name="person-circle" size={30} color="#DDD" />
           </View>
           <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>Malika</Text>
             <View style={styles.reviewRating}>
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
             </View>
             <Text style={styles.reviewText}>nice design</Text>
           </View>
@@ -71,15 +71,15 @@ const TailorProfile = () => {
 
         <View style={styles.reviewItem}>
           <View style={styles.reviewProfilePlaceholder}>
-            <UserCircle size={30} color="#DDD" />
+            <Ionicons name="person-circle" size={30} color="#DDD" />
           </View>
           <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>Bushra</Text>
             <View style={styles.reviewRating}>
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
             </View>
             <Text style={styles.reviewText}>Good fit</Text>
           </View>
@@ -87,16 +87,16 @@ const TailorProfile = () => {
 
         <View style={styles.reviewItem}>
           <View style={styles.reviewProfilePlaceholder}>
-            <UserCircle size={30} color="#DDD" />
+            <Ionicons name="person-circle" size={30} color="#DDD" />
           </View>
           <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>Mehroz</Text>
             <View style={styles.reviewRating}>
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
+              <FontAwesome5 name="star" size={12} color="#FFC107" />
             </View>
             <Text style={styles.reviewText}>
               Excellent service and very good work. Highly recommended.
@@ -104,9 +104,9 @@ const TailorProfile = () => {
           </View>
         </View>
       </View>
-      
+
       <TouchableOpacity style={styles.chatButton}>
-        <MessageCircle size={20} color="#FFF" />
+        <Ionicons name="chatbubbles" size={20} color="#FFF" />
         <Text style={styles.chatButtonText}>Chat</Text>
       </TouchableOpacity>
     </ScrollView>

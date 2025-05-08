@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native';
-import { MapPin, Menu, ArrowLeft, UserCircle } from 'lucide-react-native';
+import { Feather } from '@expo/vector-icons'; // Replaced lucide-react-native
 import { useRouter } from 'expo-router';
 
 const Customer_Orders = () => {
@@ -15,7 +15,7 @@ const Customer_Orders = () => {
         </View>
         <View style={styles.headerRight}>
           <View style={styles.signalIcons}>
-            {/* Signal icons would go here */}
+            {/* Signal icons placeholder */}
           </View>
         </View>
       </View>
@@ -23,23 +23,23 @@ const Customer_Orders = () => {
       {/* Navigation Bar */}
       <View style={styles.navBar}>
         <TouchableOpacity onPress={() => router.back()}>
-          <Menu size={24} color="#000" />
+          <Feather name="menu" size={24} color="#000" />
         </TouchableOpacity>
-        
+
         <View style={styles.locationContainer}>
-          <MapPin size={20} color="#000" />
+          <Feather name="map-pin" size={20} color="#000" />
           <Text style={styles.locationText}>Clifton, Karachi</Text>
         </View>
-        
+
         <View style={styles.profilePicPlaceholder}>
-          <UserCircle size={40} color="#DDD" />
+          <Feather name="user" size={24} color="#999" />
         </View>
       </View>
 
       {/* Title Section */}
       <View style={styles.titleContainer}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-          <ArrowLeft size={24} color="#000" />
+          <Feather name="arrow-left" size={24} color="#000" />
         </TouchableOpacity>
         <Text style={styles.title}>My Orders</Text>
       </View>
@@ -49,7 +49,7 @@ const Customer_Orders = () => {
         {/* Tailor Info and Status */}
         <View style={styles.orderHeader}>
           <View style={styles.tailorInfo}>
-            <UserCircle size={40} color="#DDD" />
+            <Feather name="user" size={40} color="#DDD" />
             <Text style={styles.tailorName}>Shabana</Text>
           </View>
           <View style={styles.statusContainer}>
@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
   locationText: {
     fontSize: 16,
     color: '#000',
+    marginLeft: 4,
   },
   profilePicPlaceholder: {
     width: 40,
@@ -200,4 +201,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Customer_Orders; 
+export default Customer_Orders;

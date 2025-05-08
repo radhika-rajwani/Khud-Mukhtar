@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, Dimensions } from 'react-native';
-import { Menu, Home, MessageCircle, Bell, Bookmark } from 'lucide-react-native';
+import { Ionicons, MaterialCommunityIcons, FontAwesome5 } from '@expo/vector-icons';
 import { Link, useRouter } from 'expo-router';
 
 const screenWidth = Dimensions.get('window').width;
@@ -22,7 +22,7 @@ const SidebarScreen = () => {
       <View style={styles.topBar}>
         {/* Hamburger menu */}
         <TouchableOpacity onPress={handleMenuPress}>
-          <Menu size={28} color="#000" />
+          <Ionicons name="menu" size={28} color="#000" />
         </TouchableOpacity>
 
         <Text style={styles.location}>Clifton, Karachi</Text>
@@ -40,9 +40,9 @@ const SidebarScreen = () => {
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="CustomerView/HomeScreen" asChild>
+            <Link href="/CustomerView/HomeScreen" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <Home size={20} color="#000" />
+                <Ionicons name="home" size={20} color="#000" />
                 <Text style={styles.menuText}>Home</Text>
               </TouchableOpacity>
             </Link>
@@ -51,16 +51,16 @@ const SidebarScreen = () => {
           <View style={styles.menuItem}>
             <Link href="" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <MessageCircle size={20} color="#000" />
+                <FontAwesome5 name="comment-dots" size={20} color="#000" />
                 <Text style={styles.menuText}>Chats</Text>
               </TouchableOpacity>
             </Link>
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="CustomerView/Customer_Notifications" asChild>
+            <Link href="/CustomerView/Customer_Notifications" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <Bell size={20} color="#000" />
+                <Ionicons name="notifications" size={20} color="#000" />
                 <Text style={styles.menuText}>Notifications</Text>
               </TouchableOpacity>
             </Link>
@@ -69,7 +69,7 @@ const SidebarScreen = () => {
           <View style={styles.menuItem}>
             <Link href="/CustomerView/Customer_Orders" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <Bookmark size={20} color="#000" />
+                <MaterialCommunityIcons name="bookmark" size={20} color="#000" />
                 <Text style={styles.menuText}>Orders</Text>
               </TouchableOpacity>
             </Link>
@@ -146,6 +146,5 @@ const styles = StyleSheet.create({
     color: '#333',
   },
 });
-
 
 export default SidebarScreen;

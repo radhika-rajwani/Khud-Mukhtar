@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native';
 import React from 'react';
 import { useRouter } from 'expo-router';
-import { MapPin, Menu, ArrowLeft } from 'lucide-react-native';
+import { Feather } from '@expo/vector-icons'; // Use Feather icons
 
 const NotificationItem = ({ text, time }) => (
   <View style={styles.notificationItem}>
@@ -22,7 +22,7 @@ const Customer_Notifications = () => {
         </View>
         <View style={styles.headerRight}>
           <View style={styles.signalIcons}>
-            {/* Signal icons would go here */}
+            {/* Signal icons placeholder */}
           </View>
         </View>
       </View>
@@ -30,21 +30,21 @@ const Customer_Notifications = () => {
       {/* Navigation Bar */}
       <View style={styles.navBar}>
         <TouchableOpacity onPress={() => router.back()}>
-          <Menu size={24} color="#000" />
+          <Feather name="menu" size={24} color="#000" />
         </TouchableOpacity>
-        
+
         <View style={styles.locationContainer}>
-          <MapPin size={20} color="#000" />
+          <Feather name="map-pin" size={20} color="#000" />
           <Text style={styles.locationText}>Clifton, Karachi</Text>
         </View>
-        
+
         <View style={styles.profilePicPlaceholder} />
       </View>
 
       {/* Back Button and Title */}
       <View style={styles.titleContainer}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-          <ArrowLeft size={24} color="#000" />
+          <Feather name="arrow-left" size={24} color="#000" />
         </TouchableOpacity>
         <Text style={styles.title}>Notifications</Text>
       </View>
@@ -100,6 +100,7 @@ const styles = StyleSheet.create({
   locationText: {
     fontSize: 16,
     color: '#000',
+    marginLeft: 4,
   },
   profilePicPlaceholder: {
     width: 40,
@@ -146,4 +147,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Customer_Notifications; 
+export default Customer_Notifications;

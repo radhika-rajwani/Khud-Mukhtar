@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, ScrollView } from 'react-native';
-import { MapPin, Menu, ArrowLeft, UserCircle } from 'lucide-react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  SafeAreaView,
+  ScrollView,
+} from 'react-native';
+import { Feather } from '@expo/vector-icons'; // Feather icon import
 import { useRouter } from 'expo-router';
 
 const OrderCard = ({ order, onAccept, onReject, onComplete }) => {
   return (
     <View style={styles.orderCard}>
       <View style={styles.customerInfo}>
-        <UserCircle size={40} color="#DDD" />
+        <Feather name="user" size={40} color="#DDD" />
         <Text style={styles.customerName}>{order.customerName}</Text>
       </View>
 
@@ -24,13 +31,13 @@ const OrderCard = ({ order, onAccept, onReject, onComplete }) => {
       <View style={styles.actionButtons}>
         {order.status === 'pending' ? (
           <>
-            <TouchableOpacity 
-              style={[styles.actionButton, styles.acceptButton]} 
+            <TouchableOpacity
+              style={[styles.actionButton, styles.acceptButton]}
               onPress={onAccept}
             >
               <Text style={styles.buttonText}>Accept</Text>
             </TouchableOpacity>
-            <TouchableOpacity 
+            <TouchableOpacity
               style={[styles.actionButton, styles.rejectButton]}
               onPress={onReject}
             >
@@ -38,7 +45,7 @@ const OrderCard = ({ order, onAccept, onReject, onComplete }) => {
             </TouchableOpacity>
           </>
         ) : order.status === 'accepted' ? (
-          <TouchableOpacity 
+          <TouchableOpacity
             style={[styles.actionButton, styles.completeButton]}
             onPress={onComplete}
           >
@@ -65,9 +72,9 @@ const Tailor_Orders = () => {
       measurements: [
         'shoulder: 5 inches',
         'chest: 14 inches',
-        'shirt length: 34 inches'
+        'shirt length: 34 inches',
       ],
-      status: 'pending'
+      status: 'pending',
     },
     {
       id: 2,
@@ -77,30 +84,30 @@ const Tailor_Orders = () => {
       measurements: [
         'shoulder: 5 inches',
         'chest: 14 inches',
-        'shirt length: 34 inches'
+        'shirt length: 34 inches',
       ],
-      status: 'pending'
-    }
+      status: 'pending',
+    },
   ]);
 
   const handleAccept = (orderId) => {
-    setOrders(orders.map(order => 
-      order.id === orderId 
-        ? { ...order, status: 'accepted' }
-        : order
-    ));
+    setOrders(
+      orders.map((order) =>
+        order.id === orderId ? { ...order, status: 'accepted' } : order
+      )
+    );
   };
 
   const handleReject = (orderId) => {
-    setOrders(orders.filter(order => order.id !== orderId));
+    setOrders(orders.filter((order) => order.id !== orderId));
   };
 
   const handleComplete = (orderId) => {
-    setOrders(orders.map(order => 
-      order.id === orderId 
-        ? { ...order, status: 'completed' }
-        : order
-    ));
+    setOrders(
+      orders.map((order) =>
+        order.id === orderId ? { ...order, status: 'completed' } : order
+      )
+    );
   };
 
   return (
@@ -120,28 +127,28 @@ const Tailor_Orders = () => {
       {/* Navigation Bar */}
       <View style={styles.navBar}>
         <TouchableOpacity onPress={() => router.back()}>
-          <Menu size={24} color="#000" />
+          <Feather name="menu" size={24} color="#000" />
         </TouchableOpacity>
-        
+
         <View style={styles.locationContainer}>
-          <MapPin size={20} color="#000" />
+          <Feather name="map-pin" size={20} color="#000" />
           <Text style={styles.locationText}>Clifton, Karachi</Text>
         </View>
-        
+
         <View style={styles.profilePicPlaceholder} />
       </View>
 
       {/* Title Section */}
       <View style={styles.titleContainer}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-          <ArrowLeft size={24} color="#000" />
+          <Feather name="arrow-left" size={24} color="#000" />
         </TouchableOpacity>
         <Text style={styles.title}>My Orders</Text>
       </View>
 
       {/* Orders List */}
       <ScrollView style={styles.ordersList}>
-        {orders.map(order => (
+        {orders.map((order) => (
           <OrderCard
             key={order.id}
             order={order}
@@ -190,6 +197,7 @@ const styles = StyleSheet.create({
   locationText: {
     fontSize: 16,
     color: '#000',
+    marginLeft: 4,
   },
   profilePicPlaceholder: {
     width: 40,
@@ -298,4 +306,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Tailor_Orders; 
+export default Tailor_Orders;

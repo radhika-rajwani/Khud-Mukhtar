@@ -1,21 +1,21 @@
 import { Dimensions } from 'react-native';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import { Star, CheckCircle, UserCircle, MessageCircle, Edit, Plus } from 'lucide-react-native';  // Importing Edit and Plus icons
+import { Feather } from '@expo/vector-icons';
 
 const screenWidth = Dimensions.get('window').width;
 
 const MyProfile = () => {
   return (
-    <ScrollView style={styles.container}>    
+    <ScrollView style={styles.container}>
       <View style={styles.profileSection}>
-        <View style={styles.profileImagePlaceholder}>
-          <UserCircle size={100} color="#DDD" />
-        </View>
-        <CheckCircle size={24} color="#2196F3" style={styles.verifiedIcon} />
+      <View style={styles.profileImagePlaceholder}>
+        <Feather name="user" size={60} color="#FFF" />
+      </View>
+        <Feather name="check-circle" size={24} color="#2196F3" style={styles.verifiedIcon} />
         <Text style={styles.tailorName}>Shabana</Text>
         <View style={styles.ratingAndOrders}>
           <View style={styles.rating}>
-            <Star size={16} color="#FFC107" style={styles.starIcon} />
+            <Feather name="star" size={16} color="#FFC107" style={styles.starIcon} />
             <Text style={styles.ratingText}>4.8</Text>
           </View>
           <Text style={styles.orderText}>10 orders completed</Text>
@@ -29,7 +29,7 @@ const MyProfile = () => {
 
         {/* Edit Button */}
         <TouchableOpacity style={styles.editButton}>
-          <Edit size={24} color="#007AFF" />
+          <Feather name="edit" size={24} color="#007AFF" />
         </TouchableOpacity>
       </View>
 
@@ -42,11 +42,11 @@ const MyProfile = () => {
           <View style={styles.imagePlaceholder} />
           <View style={styles.imagePlaceholder} />
           <View style={styles.imagePlaceholder} />
-          
+
           {/* Last Box with Plus Sign for Adding Image */}
           <View style={styles.imagePlaceholder}>
             <TouchableOpacity style={styles.addImageBox}>
-              <Plus size={24} color="#007AFF" />
+              <Feather name="plus" size={24} color="#007AFF" />
             </TouchableOpacity>
           </View>
         </View>
@@ -54,17 +54,17 @@ const MyProfile = () => {
 
       <View style={styles.reviewsSection}>
         <Text style={styles.reviewsTitle}>Reviews</Text>
-        {/* Placeholder Review Items */}
+
         <View style={styles.reviewItem}>
           <View style={styles.reviewProfilePlaceholder}>
-            <UserCircle size={30} color="#DDD" />
+            <Feather name="user" size={30} color="#DDD" />
           </View>
           <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>Malika</Text>
             <View style={styles.reviewRating}>
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
             </View>
             <Text style={styles.reviewText}>nice design</Text>
           </View>
@@ -72,15 +72,15 @@ const MyProfile = () => {
 
         <View style={styles.reviewItem}>
           <View style={styles.reviewProfilePlaceholder}>
-            <UserCircle size={30} color="#DDD" />
+            <Feather name="user" size={30} color="#DDD" />
           </View>
           <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>Bushra</Text>
             <View style={styles.reviewRating}>
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
             </View>
             <Text style={styles.reviewText}>Good fit</Text>
           </View>
@@ -88,16 +88,16 @@ const MyProfile = () => {
 
         <View style={styles.reviewItem}>
           <View style={styles.reviewProfilePlaceholder}>
-            <UserCircle size={30} color="#DDD" />
+            <Feather name="user" size={30} color="#DDD" />
           </View>
           <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>Mehroz</Text>
             <View style={styles.reviewRating}>
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
-              <Star size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
+              <Feather name="star" size={12} color="#FFC107" />
             </View>
             <Text style={styles.reviewText}>
               Excellent service and very good work. Highly recommended.
@@ -105,11 +105,11 @@ const MyProfile = () => {
           </View>
         </View>
       </View>
+
       <TouchableOpacity style={styles.chatButton}>
-        <MessageCircle size={20} color="#FFF" />
+        <Feather name="message-circle" size={20} color="#FFF" />
         <Text style={styles.chatButtonText}>Chat</Text>
       </TouchableOpacity>
-
     </ScrollView>
   );
 };
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
   },
   reviewsSection: {
     paddingHorizontal: 16,
-    marginBottom: 80, // Leave space for the chat button
+    marginBottom: 80,
   },
   reviewsTitle: {
     fontSize: 20,
@@ -205,6 +205,8 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: '#DDD',
     marginRight: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   reviewContent: {
     flex: 1,
@@ -223,11 +225,11 @@ const styles = StyleSheet.create({
     color: '#555',
   },
   chatButton: {
-    position: 'absolute', // Fix button to bottom
+    position: 'absolute',
     bottom: 20,
     left: 0,
     right: 0,
-    backgroundColor: '#007AFF', // iOS blue
+    backgroundColor: '#007AFF',
     paddingVertical: 12,
     alignItems: 'center',
     justifyContent: 'center',

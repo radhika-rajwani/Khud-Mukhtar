@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import { Star, CheckCircle, ChevronRight, Menu, UserCircle, MapPin } from 'lucide-react-native';
+import { AntDesign, FontAwesome5, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 
 const TailorCard = ({ name, description, rating, isVerified, link }) => (
   <View style={styles.tailorCard}>
     <View style={styles.profileImagePlaceholder}>
-      <UserCircle size={60} color="#DDD" />
+      <FontAwesome5 name="user-circle" size={60} color="#DDD" />
     </View>
     <View style={styles.tailorInfo}>
       <Link href={link}>
@@ -15,9 +15,9 @@ const TailorCard = ({ name, description, rating, isVerified, link }) => (
       <Text style={styles.tailorDescription}>{description}</Text>
       <View style={styles.ratingRow}>
         <Text style={styles.rating}>{rating}</Text>
-        <Star size={16} color="#FFC107" style={styles.starIcon} />
+        <AntDesign name="star" size={16} color="#FFC107" style={styles.starIcon} />
         {isVerified && (
-          <CheckCircle size={16} color="#2196F3" style={styles.verifiedIcon} />
+          <MaterialCommunityIcons name="check-circle" size={16} color="#2196F3" style={styles.verifiedIcon} />
         )}
       </View>
     </View>
@@ -46,16 +46,16 @@ const HomeScreen = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Link href="/CustomerView/SidebarScreen">
-          <Menu size={24} color="#333" />
+          <Ionicons name="menu" size={24} color="#333" />
         </Link>
 
         <View style={styles.locationRow}>
-          <MapPin size={16} color="#777" style={styles.locationIcon} />
+          <MaterialCommunityIcons name="map-marker" size={16} color="#777" style={styles.locationIcon} />
           <Text style={styles.locationText}>Clifton, Karachi</Text>
         </View>
 
         <View style={styles.profilePlaceholder}>
-          <UserCircle size={35} color="#DDD" />
+          <FontAwesome5 name="user-circle" size={35} color="#DDD" />
         </View>
       </View>
 
@@ -101,7 +101,7 @@ const HomeScreen = () => {
       {/* See More Button */}
       <TouchableOpacity style={styles.seeMoreButton}>
         <Text style={styles.seeMoreText}>See More</Text>
-        <ChevronRight size={20} color="#007AFF" />
+        <Ionicons name="chevron-forward" size={20} color="#007AFF" />
       </TouchableOpacity>
     </View>
   );

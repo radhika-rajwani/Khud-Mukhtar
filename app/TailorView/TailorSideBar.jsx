@@ -1,35 +1,42 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Dimensions } from 'react-native';
-import { Menu, Home, MessageCircle, Bell, Bookmark } from 'lucide-react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Animated,
+  Dimensions,
+} from 'react-native';
+import { Feather } from '@expo/vector-icons'; // Feather icon import
 import { Link, useRouter } from 'expo-router';
 
 const screenWidth = Dimensions.get('window').width;
 
 const TailorSidebarScreen = () => {
-  const [isOpen, setIsOpen] = useState(true); 
-  const router = useRouter(); 
+  const [isOpen, setIsOpen] = useState(true);
+  const router = useRouter();
 
   const handleMenuPress = () => {
     if (isOpen) {
       setIsOpen(false);
-      router.push('/TailorView/MyProfile'); 
-      setIsOpen(true); 
+      router.push('/TailorView/MyProfile');
+      setIsOpen(true);
     }
   };
 
   return (
     <View style={styles.container}>
+      {/* Top Bar */}
       <View style={styles.topBar}>
-        {/* Hamburger menu */}
         <TouchableOpacity onPress={handleMenuPress}>
-          <Menu size={28} color="#000" />
+          <Feather name="menu" size={28} color="#000" />
         </TouchableOpacity>
 
         <Text style={styles.location}>Clifton, Karachi</Text>
         <View style={styles.circle} />
       </View>
 
-      {/* Show Sidebar only if isOpen is true */}
+      {/* Sidebar */}
       {isOpen && (
         <Animated.View style={styles.sidebar}>
           <View style={styles.profile}>
@@ -42,25 +49,25 @@ const TailorSidebarScreen = () => {
           <View style={styles.menuItem}>
             <Link href="/TailorView/MyProfile" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <Home size={20} color="#000" />
+                <Feather name="home" size={20} color="#000" />
                 <Text style={styles.menuText}>Home</Text>
               </TouchableOpacity>
             </Link>
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="TailorView/Chats" asChild>
+            <Link href="/TailorView/Chats" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <MessageCircle size={20} color="#000" />
+                <Feather name="message-circle" size={20} color="#000" />
                 <Text style={styles.menuText}>Chats</Text>
               </TouchableOpacity>
             </Link>
           </View>
 
           <View style={styles.menuItem}>
-            <Link href="TailorView/Tailor_Notifications" asChild>
+            <Link href="/TailorView/Tailor_Notifications" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <Bell size={20} color="#000" />
+                <Feather name="bell" size={20} color="#000" />
                 <Text style={styles.menuText}>Notifications</Text>
               </TouchableOpacity>
             </Link>
@@ -69,7 +76,7 @@ const TailorSidebarScreen = () => {
           <View style={styles.menuItem}>
             <Link href="/TailorView/Tailor_Orders" asChild>
               <TouchableOpacity style={styles.menuRow}>
-                <Bookmark size={20} color="#000" />
+                <Feather name="bookmark" size={20} color="#000" />
                 <Text style={styles.menuText}>Orders</Text>
               </TouchableOpacity>
             </Link>
@@ -114,24 +121,24 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   profileCircle: {
-    width: 60,             
+    width: 60,
     height: 60,
     borderRadius: 30,
     backgroundColor: '#ccc',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 10,       
+    marginBottom: 10,
   },
   plus: {
-    fontSize: 24,          
+    fontSize: 24,
     fontWeight: 'bold',
-    color: '#555',          
+    color: '#555',
   },
   username: {
-    fontSize: 20,           
+    fontSize: 20,
     fontWeight: 'bold',
     marginTop: 5,
-    color: '#333',          
+    color: '#333',
   },
   menuItem: {
     marginVertical: 10,
@@ -146,6 +153,5 @@ const styles = StyleSheet.create({
     color: '#333',
   },
 });
-
 
 export default TailorSidebarScreen;

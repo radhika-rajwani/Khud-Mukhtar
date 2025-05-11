@@ -72,6 +72,18 @@ Gemini AI enhances the entire workflow, ensuring better communication and more a
 ## 🌍 APAC Solution Challenge 2025 Theme Alignment
 <img src="https://i.imgur.com/gLdidrQ.png" width="1000" height="400"/>
 
+---
+## 🎥 &nbsp;Demo Video
+
+
+Watch KhudMukhtars's demo on: 
+<div align="center">
+<a href="/" >
+    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt=""/  >
+</a>
+</div>
+
+---
 ## 🌍 &nbsp;Team CodeKarigars
 
 | <a href="https://github.com/radhika-rajwani"><img width="300px" src="https://i.postimg.cc/yxDZW2dn/radhika-rajwani.png" alt=""/></a> | <a href="https://github.com/nabayousuf27"><img width="300px" src="https://i.postimg.cc/YqTvD4sn/naba-yousuf.png" alt=""/></a> | <a href="https://github.com/sualehajunaid8"><img width="300px" src="https://i.postimg.cc/vZ9cJYRQ/sualeha-junaid.png" alt=""/></a> | <a href="https://github.com/MahnoorAhmed-Dev"><img width="300px" src="https://i.postimg.cc/g0WndCd3/mahnoor-ahmed.png" alt=""/></a> |

@@ -68,18 +68,58 @@ A **simple, AI-powered, bilingual** platform to help women tailors:
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div align="center"><h3><b><a href="https://github.com/radhika-rajwani">Radhika Rajwani</a></b></h3><p><i>DHA Suffa University</i></p></div>                                                                               | <div align="center"><h3><b><a href="https://github.com/nabayousuf27">Naba Yousuf</a></b></h3></a><p><i>DHA Suffa University</i></p></div>                                                                          | <div align="center"><h3><b><a href="https://github.com/sualehajunaid8">Sualeha Junaid</a></b></h3></a><p><i>DHA Suffa University</i></p></div></a>                                                               | <div align="center"><h3><b><a href="https://github.com/MahnoorAhmed-Dev">Mahnoor Ahmed</a></b></h3></a><p><i>DHA Suffa University</i></p></div>
 
-##  &nbsp;How to Run
+## 🏃‍♀️ &nbsp;Getting Started
 
-1. Clone the repository:  
-```bash
-git clone https://github.com/yourusername/khudmukhtar.git
-🤝  Contributing
-We welcome contributions! Please fork the repository, make your changes, and submit a pull request. 🌟
+Clone the **KhudMukhtar** repository from GitHub and follow the setup guide below to get it running on your system.
 
-📩  Contact
-For inquiries, contact us at: email@example.com
+---
 
-🙌  Acknowledgments
-Thanks to the incredible women who inspire us.
+## 📝 &nbsp;Prerequisites
+Before getting started, make sure you have:
 
-Shoutout to the developers, mentors, and everyone supporting the vision of Khud Mukhtar.
+- ✅ **Node.js** installed  
+- ✅ **Expo CLI** installed globally (`npm install -g expo-cli`)  
+- ✅ **Expo Go app** installed on your Android or iOS phone  
+- ✅ A **physical device** (Android/iOS) connected to the same Wi-Fi as your development machine  
+- ✅ **VS Code** or any preferred code editor
+---
+
+## 🛠️ &nbsp;Installation
+
+1. **Clone the KhudMukhtar repository**  
+   ```bash
+   git clone https://github.com/yourusername/khudmukhtar.git
+   ```
+
+2. **Navigate to the project folder**  
+   ```bash
+   cd khudmukhtar
+   ```
+
+3. **Install dependencies**  
+   Using npm:
+   ```bash
+   npm install
+  
+   ```
+
+4. **Run the app**  
+   Start the development server with Expo:
+   ```bash
+   npx expo start
+   ```
+   - This will open a browser window with a QR code.
+   - Open the **Expo Go app** on your phone and scan the QR code.
+   - The app will launch on your physical device.
+
+
+---
+
+
+## 🙌 &nbsp;Acknowledgments
+
+Thanks to the incredible women who inspire us.  
+Shoutout to the developers, mentors, and everyone supporting the vision of **Khud Mukhtar**.  
+Together, we rise. 💪✨
+
+---

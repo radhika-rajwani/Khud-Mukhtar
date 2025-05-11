@@ -58,7 +58,17 @@ A **simple, AI-powered, bilingual** platform to help women tailors:
 </div>
 
 ---
+## 🤖 &nbsp;Gemini AI Integration
 
+**Gemini AI** powers key features in **KhudMukhtar**, improving communication and streamlining the order process:
+
+- **Automates Order Invoices**: Processes customer-tailor conversations to generate accurate **order invoices**.
+- **Context-Aware Suggestions**: Provides **contextual message suggestions** to ensure key details are captured.
+- **Efficient Communication**: Facilitates smooth interaction between customers and tailors for a seamless experience.
+
+Gemini AI enhances the entire workflow, ensuring better communication and more accurate order processing.
+
+---
 ## 🌍 APAC Solution Challenge 2025 Theme Alignment
 <img src="https://i.imgur.com/gLdidrQ.png" width="1000" height="400"/>
 

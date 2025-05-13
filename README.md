@@ -51,8 +51,14 @@ A **simple, AI-powered, bilingual** platform to help women tailors:
 
 ## 👨🏻‍💻 &nbsp;Our Tech Stack
 
+<br>
 <div align="center">
-  <img src="https://i.postimg.cc/3xJFZVFT/tech-stack.png"/>
+<img src="https://i.postimg.cc/vHR53jQS/react.png" height="60"/>
+<img src="https://i.postimg.cc/hjfV5RzN/expo.png" height="60"/>
+<img src="https://i.postimg.cc/vTnfG7vz/gemini.png" height="60"/>
+<img src="https://i.postimg.cc/V6pXyZXv/firebase.png" height="60"/>
+<img src="https://i.postimg.cc/jqnz6Kr7/google-maps.png" height="60"/>
+<img src="https://i.postimg.cc/1zWpB3tp/gcp.png" height="60"/>
 </div>
 
 <div align="center">

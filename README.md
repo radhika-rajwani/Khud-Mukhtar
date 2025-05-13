@@ -1,14 +1,17 @@
 <br>
 <div align="center">
-    <img width="300x" src="https://i.postimg.cc/Xvrqn3G1/khud-mukhtar-logo.png" alt="Khud Mukhtar Logo"/>
-    <h3><i>A Needle, A Thread, A Path to Independence</i></h3>
+    <div >
+        <img src="https://i.postimg.cc/gjCvdvcD/khud-mukhtar-banner.png" alt="Khud Mukhtar Banner"/>
+    </div>
+    <div>
+         <h3><i>A Needle, A Thread, A Path to Independence</i></h3>
+    </div>      
 </div>
-<br>
 
 ## Overview
 **Khud Mukhtar** is an AI-powered digital platform designed to support home-based women tailors in Pakistan.  
 It provides an **interactive,** where tailors can showcase their services, connect with customers, and grow their businesses independently.  
----
+
 ##  Problem Statement
 Home-based women tailors face challenges such as:
 - Limited digital visibility.
@@ -20,70 +23,42 @@ A **simple, AI-powered, bilingual** platform to help women tailors:
 - Create service profiles.
 - Connect directly with customers.
 - Manage their stitching businesses efficiently through **mobile-friendly tools** like text and  voice commands.
+  
 ## 👥 Target Audience
 - Home-Based Women Tailors
 - Boutique Owners
 - Women looking for financial independence through stitching services.
+  
 ## ⚙️ &nbsp;Features
 
-### &nbsp;Initial Features
-- Connect skilled women tailors directly with customers who value their craft.
-- Enable tailors to manage their orders and receive payments seamlessly.
-- Integrated AI assistance through **Gemini** to help with communication, even for those with limited digital experience.
-- Tailors can track completed orders and monitor earnings.
-- Customers can browse a wide range of tailor services and request custom designs.
-- User profiles for both tailors and customers, including ratings and reviews.
-- Payment integration for easy transactions between customers and tailors.
-- Admin panel for managing users and ensuring service quality.
-- Empower women by unlocking their full potential through financial independence.
+### 🚀 &nbsp; Features (v1.0.0)
 
-### &nbsp;Upcoming Features
-- **WhatsApp Onboarding** – Seamless onboarding experience for users through WhatsApp.
-- **Alif** – A feature to help tailors and customers connect better through a curated experience.
-- **Online Tailor Storefronts** – Allow tailors to showcase their services and products for a wider audience.
+- Customers can browse nearby tailors based on location and view their portfolios
+- In-app chat functionality for direct communication between customers and tailors
+- AI-powered message suggestions help tailors and customers have smooth conversations
+- After agreeing on the price, customers can place the order, and Gemini AI generates an accurate order summary for the tailor
+- Tailors receive order requests with extracted details and can accept or reject them
+- Real-time notifications are sent at key stages (new messages, order updates, etc.)
+- A rating and review system allows customers to provide feedback on the tailor’s services
+- Past orders and feedback can be reviewed by both customers and tailors
 
----
+### 🚀 &nbsp; Upcoming Features
 
-##  &nbsp;Our Tech Stack
+- Urdu Language Support: Add Urdu language option for better accessibility for Pakistani users.
+- Design Inspiration Feed: Gemini AI suggests personalized designs via Pinterest API based on customer preferences and trends.
+- Secure In-App Payments: Integrate payment options for seamless transactions between tailors and customers.
+- MadadBot: AI chatbots to quickly answer common questions about orders and services.
+
+## 👨🏻‍💻 &nbsp;Our Tech Stack
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" height="60"/>
-  <img src="https://i.imgur.com/UoCnNxt.png" height="60"/>
-  <img src="https://i.imgur.com/3tKryg2.png" height="60"/>
-  <img src="https://i.imgur.com/dE6P2Ki.png" height="60"/>
+  <img src="https://i.postimg.cc/3xJFZVFT/tech-stack.png"/>
 </div>
 
 <div align="center">
   <h4>React Native + Expo | Gemini API | Firebase | Google Maps API | Google Cloud Platform</h4>
 </div>
 
----
-## 🤖 &nbsp;Gemini AI Integration
-
-**Gemini AI** powers key features in **KhudMukhtar**, improving communication and streamlining the order process:
-
-- **Automates Order Invoices**: Processes customer-tailor conversations to generate accurate **order invoices**.
-- **Context-Aware Suggestions**: Provides **contextual message suggestions** to ensure key details are captured.
-- **Efficient Communication**: Facilitates smooth interaction between customers and tailors for a seamless experience.
-
-Gemini AI enhances the entire workflow, ensuring better communication and more accurate order processing.
-
----
-## 🌍 APAC Solution Challenge 2025 Theme Alignment
-<img src="https://i.imgur.com/gLdidrQ.png" width="1000" height="400"/>
-
----
-## 🎥 &nbsp;Demo Video
-
-
-Watch KhudMukhtars's demo on: 
-<div align="center">
-<a href="/" >
-    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt=""/  >
-</a>
-</div>
-
----
 ## 🌍 &nbsp;Team CodeKarigars
 
 | <a href="https://github.com/radhika-rajwani"><img width="300px" src="https://i.postimg.cc/yxDZW2dn/radhika-rajwani.png" alt=""/></a> | <a href="https://github.com/nabayousuf27"><img width="300px" src="https://i.postimg.cc/YqTvD4sn/naba-yousuf.png" alt=""/></a> | <a href="https://github.com/sualehajunaid8"><img width="300px" src="https://i.postimg.cc/vZ9cJYRQ/sualeha-junaid.png" alt=""/></a> | <a href="https://github.com/MahnoorAhmed-Dev"><img width="300px" src="https://i.postimg.cc/g0WndCd3/mahnoor-ahmed.png" alt=""/></a> |

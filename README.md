@@ -12,23 +12,16 @@
 **Khud Mukhtar** is an AI-powered digital platform designed to support home-based women tailors in Pakistan.  
 It provides an **interactive,** where tailors can showcase their services, connect with customers, and grow their businesses independently.  
 
-##  Problem Statement
-Home-based women tailors face challenges such as:
-- Limited digital visibility.
-- Difficulty connecting with local customers.
-- Language barriers and low digital literacy.
+## ⚠️ &nbsp;Problem Statement
 
-##  Proposed Solution
-A **simple, AI-powered, bilingual** platform to help women tailors:
-- Create service profiles.
-- Connect directly with customers.
-- Manage their stitching businesses efficiently through **mobile-friendly tools** like text and  voice commands.
-  
-## 👥 Target Audience
-- Home-Based Women Tailors
-- Boutique Owners
-- Women looking for financial independence through stitching services.
-  
+<blockquote>
+For thousands of women across Pakistan, a needle and thread are not just tools — they’re a lifeline. <br><br> Yet many remain on the margins of the formal economy.  
+This disconnect doesn’t just limit the women — it holds back the country’s economic progress too.  
+<br><br>
+In a male-dominated industry, women tailors lack visibility, access to customers, and fair wages. With low digital literacy and no digital platform to support them, their potential remains untapped, their earnings capped, and their independence out of reach.
+
+</blockquote>
+ 
 ## ⚙️ &nbsp;Features
 
 ### 🚀 &nbsp; Features (v1.0.0)

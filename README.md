@@ -40,16 +40,12 @@ Watch Khud Mukhtar's demo on:
  
 ## ⚙️ &nbsp;Features
 
-### 🚀 &nbsp; Features (v1.0.0)
+### 🚀 &nbsp; Key Features (v1.0.0)
 
-- Customers can browse nearby tailors based on location and view their portfolios
-- In-app chat functionality for direct communication between customers and tailors
-- AI-powered message suggestions help tailors and customers have smooth conversations
-- After agreeing on the price, customers can place the order, and Gemini AI generates an accurate order summary for the tailor
-- Tailors receive order requests with extracted details and can accept or reject them
-- Real-time notifications are sent at key stages (new messages, order updates, etc.)
-- A rating and review system allows customers to provide feedback on the tailor’s services
-- Past orders and feedback can be reviewed by both customers and tailors
+- `Tailor Discovery`: Customers find nearby tailors through location matching and browse their work portfolios
+- `In-App Chat`: Built-in messaging system supports text and voice chat for design and price discussions
+- `AI Order Processing`: Gemini AI turns chat messages into order summaries with one click, helping tailors check and approve them through a simple accept/reject system.
+- `AI Suggested Messages`: Gemini AI provides helpful message suggestions to ensure all order details are captured
 
 ### 🚀 &nbsp; Upcoming Features
 

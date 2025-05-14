@@ -8,7 +8,7 @@
     </div>      
 </div>
 
-Khud Mukhtar is Pakistan’s first platform that connects women tailors with customers. Tailors can set up profiles, manage orders, and communicate with customers through AI-powered chat. Customers can discover local tailors, browse portfolios, and discuss orders directly within the app. The platform facilitates price negotiations, order tracking, and real-time updates for a seamless experience. 
+Khud Mukhtar is Pakistan’s first user-friendly platform connecting women tailors with customers seeking quality tailoring. Using AI-powered communication, it makes interaction easy for both sides. The app empowers tailors and gives customers a reliable way to discover and connect with skilled professionals.
 
 ## ⚠️ &nbsp;Problem Statement
 
@@ -40,11 +40,11 @@ Watch Khud Mukhtar's demo on:
  
 ## ⚙️ &nbsp;Features
 
-### 🚀 &nbsp; Key Features (v1.0.0)
+### ✨ &nbsp; Key Features (v1.0.0)
 
 - `Tailor Discovery`: Customers find nearby tailors through location matching and browse their work portfolios
 - `In-App Chat`: Built-in messaging system supports text and voice chat for design and price discussions
-- `AI Order Processing`: Gemini AI turns chat messages into order summaries with one click, helping tailors check and approve them through a simple accept/reject system.
+- `AI Order Processing`: Gemini AI turns chat messages into order summaries with one click, helping tailors check and approve them through a simple accept/reject system
 - `AI Suggested Messages`: Gemini AI provides helpful message suggestions to ensure all order details are captured
 
 ### 🚀 &nbsp; Upcoming Features
@@ -118,7 +118,7 @@ Before getting started, ensure you have the following:
 - Open the Camera app on your phone (iOS) or Expo Go (Android) and scan the QR code.
 - The app will launch on your physical device.
 
-## 🌍 &nbsp;Team CodeKarigars
+## 🪡 &nbsp;Team CodeKarigars
 
 | <a href="https://github.com/radhika-rajwani"><img width="300px" src="https://i.postimg.cc/yxDZW2dn/radhika-rajwani.png" alt=""/></a> | <a href="https://github.com/nabayousuf27"><img width="300px" src="https://i.postimg.cc/YqTvD4sn/naba-yousuf.png" alt=""/></a> | <a href="https://github.com/sualehajunaid8"><img width="300px" src="https://i.postimg.cc/vZ9cJYRQ/sualeha-junaid.png" alt=""/></a> | <a href="https://github.com/MahnoorAhmed-Dev"><img width="300px" src="https://i.postimg.cc/g0WndCd3/mahnoor-ahmed.png" alt=""/></a> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

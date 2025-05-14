@@ -1,7 +1,7 @@
 <br>
 <div align="center">
     <div >
-        <img src="https://i.postimg.cc/gjCvdvcD/khud-mukhtar-banner.png" alt="Khud Mukhtar Banner"/>
+        <img src="https://i.postimg.cc/pTv0RnPK/khud-mukhtar-banner.png" alt="Khud Mukhtar Banner"/>
     </div>
     <div>
          <h3><i>A Needle, A Thread, A Path to Independence</i></h3>

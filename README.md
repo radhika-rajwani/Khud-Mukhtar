@@ -35,6 +35,8 @@ Watch Khud Mukhtar's demo on:
 <a href="">
     <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt=""/>
 </a>
+
+## 🎯 &nbsp;APAC Solution Challenge's Theme in Focus
  
 ## ⚙️ &nbsp;Features
 

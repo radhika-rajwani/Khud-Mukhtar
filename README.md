@@ -53,10 +53,10 @@ Watch Khud Mukhtar's demo on:
 
 ### 🚀 &nbsp; Upcoming Features
 
-- Urdu Language Support: Add Urdu language option for better accessibility for Pakistani users.
-- Design Inspiration Feed: Gemini AI suggests personalized designs via Pinterest API based on customer preferences and trends.
-- Secure In-App Payments: Integrate payment options for seamless transactions between tailors and customers.
-- MadadBot: AI chatbots to quickly answer common questions about orders and services.
+- Urdu Language Support: Add Urdu language option for better accessibility for Pakistani users
+- Design Inspiration Feed: Gemini AI suggests personalized designs via Pinterest API based on customer preferences and trends
+- Secure In-App Payments: Integrate payment options for seamless transactions between tailors and customers
+- MadadBot: AI chatbots to quickly answer common questions about orders and services
 
 ## 👨🏻‍💻 &nbsp;Our Tech Stack
 

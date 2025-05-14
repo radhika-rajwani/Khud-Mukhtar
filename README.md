@@ -65,59 +65,59 @@ A **simple, AI-powered, bilingual** platform to help women tailors:
   <h4>React Native + Expo | Gemini API | Firebase | Google Maps API | Google Cloud Platform</h4>
 </div>
 
+## 🚧 &nbsp;App in Development  
+
+### 🏃‍♀️ &nbsp;Getting Started
+
+Follow these simple steps to set up the project on your local development environment.
+
+### 📝 &nbsp;Prerequisites
+
+Before getting started, ensure you have the following:
+
+- [Node.js](https://nodejs.org/en)
+- Expo CLI (Install globally with `npm install -g expo-cli`)
+- Expo Go App installed on your [Android](https://play.google.com/store/apps/details?id=host.exp.exponent) or [iOS](https://apps.apple.com/app/expo-go/id982107779) device
+- A physical device (Android/iOS) connected to the same Wi-Fi network as your development machine
+- [VS Code](https://code.visualstudio.com) or any code editor of your choice
+
+### 🛠️ &nbsp;Installation
+
+1. Clone the Repository
+
+   ```bash
+   git clone https://github.com/radhika-rajwani/Khud-Mukhtar.git
+   ```
+
+2. Navigate to the Project Directory
+
+   ```bash
+   cd khudmukhtar
+   ```
+
+3. Install Dependencies
+
+   ```bash
+   npm install
+   ```
+
+4. Start the Development Server
+
+   ```bash
+   npx expo start
+   ```
+
+<br> 
+
+- This will display a QR code in your terminal.
+- Open the Camera app on your phone (iOS) or Expo Go (Android) and scan the QR code.
+- The app will launch on your physical device.
+
 ## 🌍 &nbsp;Team CodeKarigars
 
 | <a href="https://github.com/radhika-rajwani"><img width="300px" src="https://i.postimg.cc/yxDZW2dn/radhika-rajwani.png" alt=""/></a> | <a href="https://github.com/nabayousuf27"><img width="300px" src="https://i.postimg.cc/YqTvD4sn/naba-yousuf.png" alt=""/></a> | <a href="https://github.com/sualehajunaid8"><img width="300px" src="https://i.postimg.cc/vZ9cJYRQ/sualeha-junaid.png" alt=""/></a> | <a href="https://github.com/MahnoorAhmed-Dev"><img width="300px" src="https://i.postimg.cc/g0WndCd3/mahnoor-ahmed.png" alt=""/></a> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div align="center"><h3><b><a href="https://github.com/radhika-rajwani">Radhika Rajwani</a></b></h3><p><i>DHA Suffa University</i></p></div>                                                                               | <div align="center"><h3><b><a href="https://github.com/nabayousuf27">Naba Yousuf</a></b></h3></a><p><i>DHA Suffa University</i></p></div>                                                                          | <div align="center"><h3><b><a href="https://github.com/sualehajunaid8">Sualeha Junaid</a></b></h3></a><p><i>DHA Suffa University</i></p></div></a>                                                               | <div align="center"><h3><b><a href="https://github.com/MahnoorAhmed-Dev">Mahnoor Ahmed</a></b></h3></a><p><i>DHA Suffa University</i></p></div>
-
-## 🏃‍♀️ &nbsp;Getting Started
-
-Clone the **KhudMukhtar** repository from GitHub and follow the setup guide below to get it running on your system.
-
----
-
-## 📝 &nbsp;Prerequisites
-Before getting started, make sure you have:
-
-- ✅ **Node.js** installed  
-- ✅ **Expo CLI** installed globally (`npm install -g expo-cli`)  
-- ✅ **Expo Go app** installed on your Android or iOS phone  
-- ✅ A **physical device** (Android/iOS) connected to the same Wi-Fi as your development machine  
-- ✅ **VS Code** or any preferred code editor
----
-
-## 🛠️ &nbsp;Installation
-
-1. **Clone the KhudMukhtar repository**  
-   ```bash
-   git clone https://github.com/yourusername/khudmukhtar.git
-   ```
-
-2. **Navigate to the project folder**  
-   ```bash
-   cd khudmukhtar
-   ```
-
-3. **Install dependencies**  
-   Using npm:
-   ```bash
-   npm install
-  
-   ```
-
-4. **Run the app**  
-   Start the development server with Expo:
-   ```bash
-   npx expo start
-   ```
-   - This will open a browser window with a QR code.
-   - Open the **Expo Go app** on your phone and scan the QR code.
-   - The app will launch on your physical device.
-
-
----
-
 
 ## 🙌 &nbsp;Acknowledgments
 

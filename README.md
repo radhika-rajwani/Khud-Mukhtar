@@ -14,7 +14,7 @@ Khud Mukhtar is Pakistan’s first user-friendly platform connecting women tailo
 
 <blockquote>
 Many women in Pakistan work as tailors in homes, shops, and factories but face serious challenges like difficulty finding customers and unequal opportunities in a male-dominated industry.
-<br>
+<br><br>
 The absence of visibility further limits their ability to earn fairly. 
 </blockquote>
 

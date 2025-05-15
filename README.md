@@ -37,6 +37,10 @@ Watch Khud Mukhtar's demo on:
 </a>
 
 ## 🎯 &nbsp;APAC Solution Challenge's Theme in Focus
+
+![Trade](https://i.postimg.cc/wj7CLKC7/trade.png)
+
+Khud Mukhtar helps women tailors connect with customers to create inclusive opportunities across Pakistan. By opening doors to new markets, the platform supports under-represented tailors in building stronger relationships and contributing to local economic growth. Through improved digital access, our platform promotes transparency and lasting connections within communities.
  
 ## ⚙️ &nbsp;Features
 
@@ -126,8 +130,4 @@ Before getting started, ensure you have the following:
 
 ## 🙌 &nbsp;Acknowledgments
 
-Thanks to the incredible women who inspire us.  
-Shoutout to the developers, mentors, and everyone supporting the vision of **Khud Mukhtar**.  
-Together, we rise. 💪✨
-
----
+We thank our mentors for their helpful guidance throughout this journey. Our deepest respect goes to the skilled women tailors of Pakistan whose hard work and resilience inspire us every day.

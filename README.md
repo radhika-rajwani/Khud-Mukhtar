@@ -18,14 +18,6 @@ Many women in Pakistan work as tailors in homes, shops, and factories but face s
 The absence of visibility further limits their ability to earn fairly. 
 </blockquote>
 
-## 🎥 &nbsp;Demo Video
-
-<div style="text-align: center;">
-    <a href="">
-<!--         <img src="" style="width: 80%; height: 80%;"/> -->
-    </a>
-</div>
-
 <br>
 
 Watch Khud Mukhtar's demo on: 

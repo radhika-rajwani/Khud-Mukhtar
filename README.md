@@ -20,12 +20,6 @@ The absence of visibility further limits their ability to earn fairly.
 
 <br>
 
-Watch Khud Mukhtar's demo on: 
-
-<a href="">
-    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt=""/>
-</a>
-
 ## 🎯 &nbsp;APAC Solution Challenge's Theme in Focus
 
 ![Trade](https://i.postimg.cc/wj7CLKC7/trade.png)

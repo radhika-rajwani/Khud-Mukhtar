@@ -18,8 +18,6 @@ Many women in Pakistan work as tailors in homes, shops, and factories but face s
 The absence of visibility further limits their ability to earn fairly. 
 </blockquote>
 
-<br>
-
 ## 🎯 &nbsp;APAC Solution Challenge's Theme in Focus
 
 ![Trade](https://i.postimg.cc/wj7CLKC7/trade.png)

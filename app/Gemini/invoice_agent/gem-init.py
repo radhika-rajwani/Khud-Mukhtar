@@ -1,7 +1,7 @@
 import google.generativeai as genai  
 import json
 
-genai.configure(api_key="")
+genai.configure(api_key=""GENAI_API_KEY"")
 # We will replace this with the actual conversation between the customer and the tailor after the whole negotiation is done.
 chat_transcript="""
 Customer: Hi, my name is Mahnoor, I need to get 2 full piece suits stitched and one trouser.
